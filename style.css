@@ -65,11 +65,11 @@
 }
 
 body {
- font-family: Arial;
- color: #40403F;
- background-color: #F2ECE9;
- flex-wrap: wrap;
- text-align: center;
+    font-family: Arial;
+    color: #40403F;
+    background-color: #F2ECE9;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 footer {
@@ -97,4 +97,8 @@ th, td {
   padding-left: 0;
   list-style-position: inside;
   text-align: center;
+}
+
+.bodytext {
+  margin: 30px 400px 50px 400px;
 }
