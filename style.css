@@ -1,25 +1,30 @@
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(151, 87, 45);
   font-family: Arial;
+
 }
 
 .navbar a {
-  float: left;
-  font-size: 16px;
+overflow: hidden;
+  font-size: 25px;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  display: inline-block;
+  list-style-type: none;
+margin-left:0;
 }
 
 .dropdown {
-  float: left;
+  text-align: center;
+  display: inline-block;
   overflow: hidden;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 25px;
   border: none;
   outline: none;
   color: white;
@@ -27,10 +32,6 @@
   background-color: inherit;
   font-family: inherit;
   margin: 0; 
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(151, 87, 45);
 }
 
 .dropdown-content {
@@ -64,18 +65,31 @@
   color: white;
 }
 
+.sticky {
+  top: 0;
+  width: 100%;
+  position: sticky; 
+  z-index: 1;
+  margin-top: -100px;
+}
+
+  .sticky + .content {
+      padding-top: 102px;
+  }
+
 header {
   margin: 30px;
   font-size: 20px;
 }
+
+
 
 body {
     font-family: Arial;
     font-size: 25px;
     color: #40403F;
     background-color: #F2ECE9;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0;
     text-align: center;
     position: relative;
 }
@@ -115,8 +129,16 @@ th, td {
   text-align: center;
 }
 
-.bodytext {
-  margin: 30px 400px 50px 400px;
+.container {
+margin-left:350px;
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 10px;
+}
+
+.text {
+  font-size: 30px;
 }
 
 .alignment-vid {
@@ -124,6 +146,198 @@ th, td {
   align-content: center;
   margin-bottom: 50px;
   margin-top: 50px;
+}
+
+.align-left{
+  text-align: left;
+  font-size: 40px;
+}
+
+hr {
+  width: 75%; 
+  height: 3px; 
+  background-color: #40403F;
+}
+
+#tabletop {
+  scroll-margin-top: 120px;
+}
+
+#video-games {
+  scroll-margin-top: 120px;
+}
+
+#about {
+  scroll-margin-top: 120px;
+}
+
+#logo {
+  scroll-margin-top: 120px;
+}
+
+.column {
+  float: left;
+  width: 5%;
+  padding: 5px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 100px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.badgecombat {
+  background-color: #40403F;
+  border: 2px solid rgb(255, 42, 42);
+  border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+  box-shadow: 1px 1px 1px black;
+  color: rgb(255, 34, 34);
+  font: bold 15px/13px Helvetica, Verdana, Tahoma;
+  height: 25px; 
+  min-width: 14px;
+  padding: 4px 3px 0 3px;
+  text-align: center;
+  float: left;
+  margin: 6px;
+  top: 25px; 
+}
+
+.badgemovement {
+  background-color: #40403F;
+  border: 2px solid rgb(42, 255, 42);
+  border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+  box-shadow: 1px 1px 1px black;
+  color: rgb(34, 255, 89);
+  font: bold 15px/13px Helvetica, Verdana, Tahoma;
+  height: 25px;  
+  min-width: 14px;
+  padding: 4px 3px 0 3px;
+  text-align: center;
+  float: left;
+  margin: 6px;
+  top: 25px; 
+}
+
+.badgemechanic {
+  background-color: #40403F;
+  border: 2px solid rgb(149, 142, 248);
+  border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+  box-shadow: 1px 1px 1px black;
+  color: rgb(117, 107, 248);
+  font: bold 15px/13px Helvetica, Verdana, Tahoma;
+  height: 25px; 
+  min-width: 14px;
+  padding: 4px 3px 0 3px;
+  text-align: center;
+  float: left;
+  margin: 6px;
+  top: 25px; 
+}
+
+.badgehudui {
+  background-color: #40403F;
+  border: 2px solid rgb(220, 42, 255);
+  border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+  box-shadow: 1px 1px 1px black;
+  color: rgb(211, 34, 255);
+  font: bold 15px/13px Helvetica, Verdana, Tahoma;
+  height: 25px; 
+  min-width: 14px;
+  padding: 4px 3px 0 3px;
+  text-align: center;
+  float: left;
+  margin: 6px;
+  top: 25px; 
+}
+
+.badgesoundfx {
+  background-color: #40403F;
+  border: 2px solid rgb(42, 241, 255);
+  border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+  box-shadow: 1px 1px 1px black;
+  color: rgb(34, 229, 255);
+  font: bold 15px/13px Helvetica, Verdana, Tahoma;
+  height: 25px;  
+  min-width: 14px;
+  padding: 4px 3px 0 3px;
+  text-align: center;
+  float: left;
+  margin: 6px;
+  top: 25px; 
+}
+
+.badgegddref {
+  background-color: #40403F;
+  border: 2px solid rgb(255, 42, 173);
+  border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+  box-shadow: 1px 1px 1px black;
+  color: rgb(255, 34, 156);
+  font: bold 15px/13px Helvetica, Verdana, Tahoma;
+  height: 25px;  
+  min-width: 14px;
+  padding: 4px 3px 0 3px;
+  text-align: center;
+  float: left;
+  margin: 6px;
+  top: 25px; 
+}
+
+.badgevidphoto {
+  background-color: #40403F;
+  border: 2px solid rgb(251, 255, 42);
+  border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+  box-shadow: 1px 1px 1px black;
+  color: rgb(240, 255, 34);
+  font: bold 15px/13px Helvetica, Verdana, Tahoma;
+  height: 25px; 
+  min-width: 14px;
+  padding: 4px 3px 0 3px;
+  text-align: center;
+  float: left;
+  margin: 6px;
+  top: 25px; 
+}
+
+.badgelevel {
+  background-color: #40403F;
+  border: 2px solid rgb(255, 156, 42);
+  border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+  box-shadow: 1px 1px 1px black;
+  color: rgb(255, 178, 34);
+  font: bold 15px/13px Helvetica, Verdana, Tahoma;
+  height: 25px; 
+  min-width: 14px;
+  padding: 4px 3px 0 3px;
+  text-align: center;
+  float: left;
+  margin: 6px;
+  top: 25px; 
+}
+
+.badgecamera {
+  background-color: #40403F;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+  box-shadow: 1px 1px 1px black;
+  color: rgb(255, 255, 255);
+  font: bold 15px/13px Helvetica, Verdana, Tahoma;
+  height: 25px; 
+  min-width: 14px;
+  padding: 4px 3px 0 3px;
+  text-align: center;
+  float: left;
+  margin: 6px;
+  top: 25px; 
+}
+
+ul {
+  text-align: left;
+  list-style-position: inside;
+  margin-left: 35%;
 }
 
 * {box-sizing:border-box}
@@ -168,7 +382,7 @@ th, td {
 }
 
 /* Caption text */
-.text {
+.textslides {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -205,7 +419,7 @@ th, td {
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
+  animation-name: dissolve;
   animation-duration: 1.5s;
 }
 

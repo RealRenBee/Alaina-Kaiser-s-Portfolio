@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Welcome to my design portfolio.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+
+     <div class="sticky">
+      <div class="navbar">
+        <a href="index.html#logo"><img src="Logo.png" alt="img" style="max-width: 100px; max-height: 100px; margin-right: 0px"></img> </a>
+
+    
+        <div class="dropdown">
+          <button class="dropbtn">Background
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="AlainaKaiser_Resume.pdf" target="_blank">Resume</a>
+            <a href="AlainaKaiser_VideoGameTesting.pdf" target="_blank">Video Game Testing</a>
+          </div>
+        </div>
+    
+        <div class="dropdown">
+          <button class="dropbtn">Projects
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="index.html#video-games">Video Games</a>
+            <a href="index.html#tabletop">Tabletop</a>
+          </div>
+        </div>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+     </div>
+ 
+<!-- Web title-->
+  <title>Alaina Kaiser: Portfolio</title>
+  
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<header>
+  <br id="logo">
+  <br>
+  <br>
+  <br>
+  <img src="Logo.png" alt="Initials A and K as a logo" width="200" height="125">
+  <h1>Roblox Lo-Fi Room</h1>
+<hr>
+<div style=" text-align: left; list-style-position: inside; margin-left: 45%;">
+<div class="badgevidphoto">Photo</div>
+</div>
+<div class="badgelevel">Level Design</div>
+<div class="badgesoundfx">Sound & FX</div>
+
+<br>
+<br>
+<br>
+  
+</header>
+
+ <body> 
+  <h3><u>Detailed Overview:</u></h3>
+  <ul>
+    <li>Combination of assets using the Roblox store</li>
+    <li>Camera locked in first person and cursor removed</li>
+    <li>Lo-Fi music loop, edited</li>
+    <li>Designed as a showcase for an assignment</li>
+    <li>Screenshots</li>
+  </ul>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="lofiroom1_orig.png" style="width:100%">
+    <div class="textslides">Lo-Fi Room, Roblox (2020 - 2021, 1/4)</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="lofiroom2_orig.png" style="width:100%">
+    <div class="textslides">Lo-Fi Room, Roblox (2020 - 2021, 2/4)</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="lofiroom3_orig.png" style="width:100%">
+    <div class="textslides">Lo-Fi Room, Roblox (2020 - 2021, 3/4)</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="lofiroom3_orig.png" style="width:100%">
+    <div class="textslides">Lo-Fi Room, Roblox (2020 - 2021, 4/4)</div>
+  </div>
+
+
+</div>
+
+
+
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    <!-- Put slide show with images here-->
+    <br></br>
+
+
+  <body style="text-align: center"> 
+   
+ </body>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <footer> 
+  <p>  Alaina Kaiser | <script>document.write(new Date().getFullYear())</script> </p>
+<a href="https://www.linkedin.com/in/alaina-kaiser-7005b5205/" target="_blank"><img src="linkedin.png" style="float: right; margin-right: 15px; margin-top: -65px; width: 65x; height: 70px;"></a>
+</footer>
+</html>

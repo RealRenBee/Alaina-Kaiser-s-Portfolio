@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Welcome to my design portfolio.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+
+     <div class="sticky">
+      <div class="navbar">
+        <a href="index.html#logo"><img src="Logo.png" alt="img" style="max-width: 100px; max-height: 100px; margin-right: 0px"></img> </a>
+
+    
+        <div class="dropdown">
+          <button class="dropbtn">Background
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="AlainaKaiser_Resume.pdf" target="_blank">Resume</a>
+            <a href="AlainaKaiser_VideoGameTesting.pdf" target="_blank">Video Game Testing</a>
+          </div>
+        </div>
+    
+        <div class="dropdown">
+          <button class="dropbtn">Projects
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="index.html#video-games">Video Games</a>
+            <a href="index.html#tabletop">Tabletop</a>
+          </div>
+        </div>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+     </div>
+ 
+<!-- Web title-->
+  <title>Alaina Kaiser: Portfolio</title>
+  
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<header>
+  <br id="logo">
+  <br>
+  <br>
+  <br>
+  <img src="Logo.png" alt="Initials A and K as a logo" width="200" height="125">
+  <h1>Puzzle Level Pressure Plate</h1>
+<hr>
+<div style=" text-align: left; list-style-position: inside; margin-left: 40%;">
+<div class="badgevidphoto">Video & Photo</div>
+</div>
+<div class="badgelevel">Level Design</div>
+<div class="badgesoundfx">Sound & FX</div>
+<div class="badgemechanic">Mechanic</div>
+<div class="badgegddref">Ref</div>
+
+<br>
+<br>
+<br>
+  
+</header>
+
+ <body> 
+  <h3><u>Detailed Overview:</u></h3>
+  <ul>
+    <li>Blockmesh using basic geometry and Supergrid</li>
+    <li>Pressure plate mechanic IPM structure</li>
+    <li>Introduce: Pressure plate opens a door</li>
+    <li>Practice: Multiple pressure plates to open a tomb</li> 
+    <li>Master: Timed pressure plates to open a tomb</li>
+    <li>Copyright free sound effects, edited</li>
+    <li>Reference images collection</li>
+    <li>Screenshots and video walkthrough</li>
+  </ul>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="pressureplatelevel1.png" style="width:100%">
+    <div class="textslides">Manor Blockmesh, Unreal Engine 4 (2022)</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="pressureplatelevel2.png" style="width:100%">
+    <div class="textslides">Tunnel Blockmesh, Unreal Engine 4 (2022)</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="pressureplatelevel3.png" style="width:100%">
+    <div class="textslides">Village Blockmesh, Unreal Engine 4 (2022)</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="pressureplatelevel4.png" style="width:100%">
+    <div class="textslides">Church Blockmesh, Unreal Engine 4 (2022)</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="pressureplatelevel5.png" style="width:100%">
+    <div class="textslides">Church Interior Blockmesh, Unreal Engine 4 (2022)</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="pressureplatelevel6.png" style="width:100%">
+    <div class="textslides">Forest to Road Blockmesh, Unreal Engine 4 (2022)</div>
+  </div>
+
+</div>
+
+
+
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    <!-- Put slide show with images here-->
+    <br></br>
+    
+
+  <body style="text-align: center"> 
+    <iframe width="1000" height="567" src="https://www.youtube.com/embed/nEetw3m6Uro" title="Level Design - Blockmesh Phase 1 (Full Sail Assignment)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </body>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <footer> 
+  <p>  Alaina Kaiser | <script>document.write(new Date().getFullYear())</script> </p>
+<a href="https://www.linkedin.com/in/alaina-kaiser-7005b5205/" target="_blank"><img src="linkedin.png" style="float: right; margin-right: 15px; margin-top: -65px; width: 65x; height: 70px;"></a>
+</footer>
+</html>
