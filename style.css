@@ -195,7 +195,7 @@ hr {
   border: 2px solid rgb(255, 42, 42);
   border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
   box-shadow: 1px 1px 1px black;
-  color: rgb(255, 34, 34);
+  color: rgb(255, 42, 42);
   font: bold 15px/13px Helvetica, Verdana, Tahoma;
   height: 25px; 
   min-width: 14px;
@@ -211,7 +211,7 @@ hr {
   border: 2px solid rgb(42, 255, 42);
   border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
   box-shadow: 1px 1px 1px black;
-  color: rgb(34, 255, 89);
+  color: rgb(42, 255, 42);
   font: bold 15px/13px Helvetica, Verdana, Tahoma;
   height: 25px;  
   min-width: 14px;
@@ -227,7 +227,7 @@ hr {
   border: 2px solid rgb(149, 142, 248);
   border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
   box-shadow: 1px 1px 1px black;
-  color: rgb(117, 107, 248);
+  color: rgb(149, 142, 248);
   font: bold 15px/13px Helvetica, Verdana, Tahoma;
   height: 25px; 
   min-width: 14px;
@@ -243,7 +243,7 @@ hr {
   border: 2px solid rgb(220, 42, 255);
   border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
   box-shadow: 1px 1px 1px black;
-  color: rgb(211, 34, 255);
+  color: rgb(220, 42, 255);
   font: bold 15px/13px Helvetica, Verdana, Tahoma;
   height: 25px; 
   min-width: 14px;
@@ -259,7 +259,7 @@ hr {
   border: 2px solid rgb(42, 241, 255);
   border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
   box-shadow: 1px 1px 1px black;
-  color: rgb(34, 229, 255);
+  color: rgb(42, 241, 255);
   font: bold 15px/13px Helvetica, Verdana, Tahoma;
   height: 25px;  
   min-width: 14px;
@@ -275,7 +275,7 @@ hr {
   border: 2px solid rgb(255, 42, 173);
   border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
   box-shadow: 1px 1px 1px black;
-  color: rgb(255, 34, 156);
+  color: rgb(255, 42, 173);
   font: bold 15px/13px Helvetica, Verdana, Tahoma;
   height: 25px;  
   min-width: 14px;
@@ -291,7 +291,7 @@ hr {
   border: 2px solid rgb(251, 255, 42);
   border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
   box-shadow: 1px 1px 1px black;
-  color: rgb(240, 255, 34);
+  color: rgb(251, 255, 42);
   font: bold 15px/13px Helvetica, Verdana, Tahoma;
   height: 25px; 
   min-width: 14px;
@@ -307,7 +307,7 @@ hr {
   border: 2px solid rgb(255, 156, 42);
   border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
   box-shadow: 1px 1px 1px black;
-  color: rgb(255, 178, 34);
+  color: rgb(255, 156, 42);
   font: bold 15px/13px Helvetica, Verdana, Tahoma;
   height: 25px; 
   min-width: 14px;
