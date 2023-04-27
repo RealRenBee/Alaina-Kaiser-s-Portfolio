@@ -2,9 +2,6 @@
 <html lang="en">
 
  <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Welcome to my design portfolio.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-88CQNSVYCP"></script>
@@ -16,6 +13,10 @@
   gtag('config', 'G-88CQNSVYCP');
 </script>
 
+  <meta charset="UTF-8">
+  <meta name="description" content="Welcome to my design portfolio.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!-- 
 <div class="badgemovement">Movement</div>
 <div class="badgecombat">Combat</div>
@@ -26,6 +27,26 @@
 <div class="badgevidphoto">Video & Photo</div>
 <div class="badgelevel">Level Design</div>
 <div class="badgecamera">Scrum</div>
+
+
+.column {
+  float: left;
+  width: 5%;
+  padding: 5px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 100px;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
 -->
 
      <div class="sticky">
@@ -56,6 +77,8 @@
         <a href="#contact">Contact</a>
       </div>
      </div>
+
+     
  
 <!-- Web title-->
   <title>Alaina Kaiser: Portfolio</title>
@@ -73,65 +96,72 @@
 
   <br>
 </header>
-
  <body style="text-align: center"> 
   <h3>Welcome to my design portfolio, <b>created using: </h3>
  
     <img src="Tools.png" alt="Logos for GitHub, Visual Studio Code, Desygner, HTML, CSS, and Adobe Color" width="585" height="885">
     <br></br>
-  <!-- <img src="Quote.png" alt="A cat standing on a staircase next to the quote" width="900" height="600"> -->
 
   <body style="text-align: center"> 
     <hr>
     <h2 id="video-games"><u>Video Games</u></h2>
 
-    <div class="row">
-      <div class="column">
-        <a href="whacksparrow-thingy-mabob.html"><img src="GT-WhackSparrow-Thingy-Mabob.png"></a>
-      </div>
-      <div class="column">
-        <a href=""><img src="GT-TBD-Project.png"></a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column">
-        <a href="infinityblade-castle.html"><img src="GT-InfinityBlade-Castle.png"></a>
-      </div>
-      <div class="column">
-        <a href="adventure-blockmesh.html"><img src="GT-Adventure-Blockmesh.png"></a>
+    <div id="wrapper">
+      <div id="outer">
+        <div class="itemwrapper">
+          <a href="whacksparrow-thingy-mabob.html"><img src="GT-WhackSparrow-Thingy-Mabob.png"></a>
+        </div>
+        <div class="itemwrapper">
+          <a href=""><img src="GT-TBD-Project.png"></a>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="column">
-        <a href="roblox-lofiroom.html"><img src="GT-Roblox-LofiRoom.png"></a>
-      </div>
-      <div class="column">
-        <a href="puzzlelevel-pressureplate.html"><img src="GT-MechanicsLevel-PressurePlate.png"></a>
+    <div id="wrapper">
+      <div id="outer">
+        <div class="itemwrapper">
+          <a href="infinityblade-castle.html"><img src="GT-InfinityBlade-Castle.png"></a>
+        </div>
+        <div class="itemwrapper">
+          <a href="adventure-blockmesh.html"><img src="GT-Adventure-Blockmesh.png"></a>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="column">
-        <a href="mockup-gamegui.html"><img src="GT-Mockup-GameGui.png"></a>
+    <div id="wrapper">
+      <div id="outer">
+        <div class="itemwrapper">
+          <a href="roblox-lofiroom.html"><img src="GT-Roblox-LofiRoom.png"></a>
+        </div>
+        <div class="itemwrapper">
+          <a href="puzzlelevel-pressureplate.html"><img src="GT-MechanicsLevel-PressurePlate.png"></a>
+        </div>
       </div>
-      <div class="column">
-        <a href="puzzlelevel-tothehelm.html"><img src="GT-PuzzleLevel-ToTheHelm.png"></a>
+    </div>
+
+    <div id="wrapper">
+      <div id="outer">
+        <div class="itemwrapper">
+          <a href="mockup-gamegui.html"><img src="GT-Mockup-GameGui.png"></a>
+        </div>
+        <div class="itemwrapper">
+          <a href="puzzlelevel-tothehelm.html"><img src="GT-PuzzleLevel-ToTheHelm.png"></a>
+        </div>
       </div>
     </div>
     
-
     <hr>
 
     <h2 id="tabletop"><u>Tabletop</u></h2>
 
-    <div class="row">
-      <div class="column">
-        <a href="ichallengethee.html"><img src="GT-BoardGame-IChallengeThee.png"></a>
-      </div>
-      <div class="column">
-        <a href="cardgameternion.html"><img src="GT-CardGame-Ternion.png"></a>
+    <div id="wrapper">
+      <div id="outer">
+        <div class="itemwrapper">
+          <a href="ichallengethee.html"><img src="GT-BoardGame-IChallengeThee.png"></a>
+        </div>
+        <div class="itemwrapper">
+          <a href="cardgameternion.html"><img src="GT-CardGame-Ternion.png"></a>
+        </div>
       </div>
     </div>
 
@@ -139,37 +169,37 @@
     
     <h2 id="about"><u>About</u></h2>
 
-
-<div class="container">
-<div class="image">
-  <img src="alainaPFP.png" width="auto" height="auto" margin-left="100px">
-</div>
-<div class="text">
-  <p> Hi, my name is Alaina Kaiser! <br></p>
-  <p></b>I'm an IT Assistant and Game Designer from Tonganoxie, Kansas. I currently attend Full Sail University, 
-    where I will be graduating with my bachelor's degree in Game Design.</p>
-    <br>
-</div>
-</div>
-
+    <div id="wrapper">
+      <div id="outer">
+        <div class="itemwrapper">
+          <img src="alainaPFP.png" width="auto" height="auto" margin-left="100px">
+        </div>
+        <div class="itemwrapper">
+          <div class="text">
+          <p> Hi, my name is Alaina Kaiser! <br></p>
+          <p></b>I'm an IT Assistant and Game Designer from Tonganoxie, Kansas. I currently attend Full Sail University, 
+            where I will be graduating with my bachelor's degree in Game Design.</p>
+            <br>
+            </div>
+        </div>
+      </div>
+    </div>
 
   <br>
   <hr>
       <h2 id="contact"><u>Contact</u></h2>
-  
+
       <div class="container">
         <div class="image">
-          <img src="contactimg.png" width="auto" height="auto" margin-left="300000px">
+          <img src="contactimg.png" width="auto" height="auto">
         </div>
         <div class="text">
           <div class="align-left">
-            <p style="margin-top: 0px"><b>Email:</b> contact.alainak@gmail.com</p>
+            <p style="margin-top: 20px"><b>Email:</b> contact.alainak@gmail.com</p>
 
             <p style="margin-top: 200px"><b>LinkedIn Profile: </b>
               <br><a href="https://www.linkedin.com/in/alaina-kaiser-7005b5205/"> Alaina Kaiser</a></p>
-
           </div>
-
         </div>
         </div>
 

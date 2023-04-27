@@ -82,7 +82,9 @@ header {
   font-size: 20px;
 }
 
-
+h2 {
+font-size: 50px;
+}
 
 body {
     font-family: Arial;
@@ -138,7 +140,7 @@ margin-left:350px;
 }
 
 .text {
-  font-size: 30px;
+  font-size: 42px;
 }
 
 .alignment-vid {
@@ -175,20 +177,28 @@ hr {
   scroll-margin-top: 120px;
 }
 
-.column {
-  float: left;
-  width: 5%;
-  padding: 5px;
-  margin-left: 300px;
-  margin-right: 300px;
-  margin-bottom: 100px;
+#outer {
+  width:65%;
+  margin:auto;
+  display:flex;
+  flex-wrap:wrap;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+#outer2 {
+  width:20%;
+  height:20%;
+  margin:auto;
+  display:flex;
+  flex-wrap:wrap;
 }
+
+#outer>div {flex:1;}
+#outer>div>img {
+  width:70%;
+  min-width:500px;
+}
+
+
 
 .badgecombat {
   background-color: #40403F;
