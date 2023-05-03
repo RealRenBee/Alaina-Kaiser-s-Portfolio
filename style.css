@@ -1,6 +1,92 @@
+:root {
+  --footer-color: #40403F;
+  --footer-font-color: #A6A5A4;
+  --font-color: #40403F;
+  --bg-color: #F2ECE9;
+  --navbar-color: rgb(151, 87, 45);
+  --dropdown-font-color: black;
+  --dropdown-color: white;
+  --navhover-bg-color: #ddd;
+}
+
+.dark-mode {
+  --bg-color: #1a1a1a;
+  --font-color: #fff;
+  --navbar-color: #464646;
+  --dropdown-color: #222;
+  --dropdown-font-color: #fff;
+  --navhover-bg-color: #3b3a3a;
+}
+
+.dark-mode .navbar a {
+  color: #fff;
+}
+
+.dark-mode .dropdown-content {
+  background-color: #222;
+}
+
+.dark-mode th, .dark-mode td {
+  border-color: #fff;
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 100px 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.image {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .image-container {
+    gap: 50px;
+    padding: 50px 0;
+  }
+
+  .column {
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .column:last-child .image:last-child {
+    margin-bottom: 100px;
+  }
+
+  .column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .image {
+    margin: 0;
+    background-color: transparent;
+  }
+}
+
+
 .navbar {
   overflow: hidden;
-  background-color: rgb(151, 87, 45);
+  background-color: var(--navbar-color);
   font-family: Arial;
 
 }
@@ -37,7 +123,7 @@ margin-left:0;
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--dropdown-color);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -45,7 +131,7 @@ margin-left:0;
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: var(--dropdown-font-color);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -53,7 +139,7 @@ margin-left:0;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: var(--navhover-bg-color);
 }
 
 .dropdown:hover .dropdown-content {
@@ -89,8 +175,8 @@ font-size: 50px;
 body {
     font-family: Arial;
     font-size: 25px;
-    color: #40403F;
-    background-color: #F2ECE9;
+    color: var(--font-color);
+    background-color: var(--bg-color);
     margin-left: 0;
     text-align: center;
     position: relative;

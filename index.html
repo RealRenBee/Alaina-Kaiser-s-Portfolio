@@ -17,6 +17,8 @@
   <meta name="description" content="Welcome to my design portfolio.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+
 <!-- 
 <div class="badgemovement">Movement</div>
 <div class="badgecombat">Combat</div>
@@ -28,24 +30,6 @@
 <div class="badgelevel">Level Design</div>
 <div class="badgecamera">Scrum</div>
 
-
-.column {
-  float: left;
-  width: 5%;
-  padding: 5px;
-  margin-left: 300px;
-  margin-right: 300px;
-  margin-bottom: 100px;
-}
-
-
-
-
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
-}
 
 -->
 
@@ -75,6 +59,10 @@
         </div>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
+      <a>
+        <img id="dark-mode-toggle" src="vecteezy_sun-icon-clip-art_22189241_355.png" alt="Dark mode toggle button" width="50" height="50">
+      </a>  
+    <script src="darkmode.js"></script>
       </div>
      </div>
 
@@ -86,11 +74,13 @@
 
 </head>
 
+
 <header>
   <br id="logo">
   <br>
   <br>
   <br>
+
   <img src="Logo.png" alt="Initials A and K as a logo" width="200" height="125">
   <h1>Alaina Kaiser</h1>
 
@@ -106,47 +96,20 @@
     <hr>
     <h2 id="video-games"><u>Video Games</u></h2>
 
-    <div id="wrapper">
-      <div id="outer">
-        <div class="itemwrapper">
-          <a href="whacksparrow-thingy-mabob.html"><img src="GT-WhackSparrow-Thingy-Mabob.png"></a>
-        </div>
-        <div class="itemwrapper">
-          <a href=""><img src="GT-TBD-Project.png"></a>
-        </div>
-      </div>
-    </div>
+ 
 
-    <div id="wrapper">
-      <div id="outer">
-        <div class="itemwrapper">
-          <a href="infinityblade-castle.html"><img src="GT-InfinityBlade-Castle.png"></a>
-        </div>
-        <div class="itemwrapper">
-          <a href="adventure-blockmesh.html"><img src="GT-Adventure-Blockmesh.png"></a>
-        </div>
+    <div class="image-container">
+      <div class="column"> <!-- Left Column-->
+        <div class="image"><a href="whacksparrow-thingy-mabob.html"><img src="GT-WhackSparrow-Thingy-Mabob.png"></a></div>
+        <div class="image"><a href="infinityblade-castle.html"><img src="GT-InfinityBlade-Castle.png"></a></div>
+        <div class="image"><a href="roblox-lofiroom.html"><img src="GT-Roblox-LofiRoom.png"></a></div>
+        <div class="image"><a href="mockup-gamegui.html"><img src="GT-Mockup-GameGui.png"></a></div>
       </div>
-    </div>
-
-    <div id="wrapper">
-      <div id="outer">
-        <div class="itemwrapper">
-          <a href="roblox-lofiroom.html"><img src="GT-Roblox-LofiRoom.png"></a>
-        </div>
-        <div class="itemwrapper">
-          <a href="puzzlelevel-pressureplate.html"><img src="GT-MechanicsLevel-PressurePlate.png"></a>
-        </div>
-      </div>
-    </div>
-
-    <div id="wrapper">
-      <div id="outer">
-        <div class="itemwrapper">
-          <a href="mockup-gamegui.html"><img src="GT-Mockup-GameGui.png"></a>
-        </div>
-        <div class="itemwrapper">
-          <a href="puzzlelevel-tothehelm.html"><img src="GT-PuzzleLevel-ToTheHelm.png"></a>
-        </div>
+      <div class="column"> <!-- Right Column-->
+        <div class="image"><a href="index.html"><img src="GT-TBD-PROJECT.png"></a></div>
+        <div class="image"><a href="adventure-blockmesh.html"><img src="GT-Adventure-Blockmesh.png"></a></div>
+        <div class="image"><a href="puzzlelevel-pressureplate.html"><img src="GT-MechanicsLevel-PressurePlate.png"></a></div>
+        <div class="image"><a href="puzzlelevel-tothehelm.html"><img src="GT-PuzzleLevel-ToTheHelm.png"></a></div>
       </div>
     </div>
     
@@ -154,14 +117,12 @@
 
     <h2 id="tabletop"><u>Tabletop</u></h2>
 
-    <div id="wrapper">
-      <div id="outer">
-        <div class="itemwrapper">
-          <a href="ichallengethee.html"><img src="GT-BoardGame-IChallengeThee.png"></a>
-        </div>
-        <div class="itemwrapper">
-          <a href="cardgameternion.html"><img src="GT-CardGame-Ternion.png"></a>
-        </div>
+    <div class="image-container">
+      <div class="column"> <!-- Left Column-->
+        <div class="image"><a href="ichallengethee.html"><img src="GT-BoardGame-IChallengeThee.png"></a></a></div>
+      </div>
+      <div class="column"> <!-- Right Column-->
+        <div class="image"><a href="cardgameternion.html"><img src="GT-CardGame-Ternion.png"></a></div>
       </div>
     </div>
 
