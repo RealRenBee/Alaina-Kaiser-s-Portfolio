@@ -1,33 +1,13 @@
 :root {
-  --footer-color: #40403F;
-  --footer-font-color: #A6A5A4;
-  --font-color: #40403F;
-  --bg-color: #F2ECE9;
-  --navbar-color: rgb(151, 87, 45);
-  --dropdown-font-color: black;
-  --dropdown-color: white;
-  --navhover-bg-color: #ddd;
-}
-
-.dark-mode {
+  --footer-color: #f5f5f5;
+  --footer-font-color: #1a1a1a;
+  --font-color: #f5f5f5;
   --bg-color: #1a1a1a;
-  --font-color: #fff;
-  --navbar-color: #464646;
+  --navbar-color: #ffde59;
+  --dropdown-font-color: #f5f5f5;
   --dropdown-color: #222;
-  --dropdown-font-color: #fff;
   --navhover-bg-color: #3b3a3a;
-}
-
-.dark-mode .navbar a {
-  color: #fff;
-}
-
-.dark-mode .dropdown-content {
-  background-color: #222;
-}
-
-.dark-mode th, .dark-mode td {
-  border-color: #fff;
+  --navbar-font-color: #1a1a1a;
 }
 
 
@@ -88,19 +68,18 @@
   overflow: hidden;
   background-color: var(--navbar-color);
   font-family: Arial;
-
 }
 
 .navbar a {
-overflow: hidden;
+  overflow: hidden;
   font-size: 25px;
-  color: white;
+  color: var(--navbar-font-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   display: inline-block;
   list-style-type: none;
-margin-left:0;
+  margin-left:0;
 }
 
 .dropdown {
@@ -113,7 +92,7 @@ margin-left:0;
   font-size: 25px;
   border: none;
   outline: none;
-  color: white;
+  color: var(--navbar-font-color);
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -183,9 +162,8 @@ body {
 }
 
 footer {
-  background-color: #40403F;
-
-  color:#A6A5A4;
+  background-color: var(--footer-color);
+  color:var(--footer-font-color);
   text-align: center;
   font-family: Arial;
   font-size: 20px;
